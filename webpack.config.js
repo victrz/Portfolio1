@@ -65,7 +65,7 @@ module.exports = {
         filename: 'index.min.js',
         path: resolve(PATHS.build),
         // publicPath: "/Portfolio/"
-        publicPath: "/dist/"
+        publicPath: "/Portfolio1/"
 
     },
     module: {
