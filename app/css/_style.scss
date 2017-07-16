@@ -4,6 +4,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Archivo';
+  src: url('./fonts/ArchivoNarrow-Regular.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
 
 html{
   width: 100%;
@@ -15,14 +21,23 @@ body{
     height: 100%;
 }
 footer{
-  height: 30vh;
+  height: 18vh;
   background: #282E34;
+}
+#copyright{
+  color: white;
+}
+#copyright:before{
+  content: "\00a9 ";
 }
 #social{
   a:link,  a:visited, a:hover, a:active,{
     text-decoration: none;
-    color: white;
+    color: #D7BAB8;
   }
+}
+.fa{
+  color: #D7BAB8;
 }
 #nav{
   width: 50%;
@@ -33,7 +48,7 @@ footer{
       text-decoration: none;
       color: black;
     }
-  
+
 
 }
 #top-nav{
@@ -91,11 +106,12 @@ footer{
   font-size: 25px;
   letter-spacing: 10px;
 }
+
 .title{
   position: absolute;
-  left: 0;
+  // left: 0;
   bottom: 25%;
-  width: 100%;
+  // width: 100%;
   // text-align: center;
   color: #000;
   // width: 60%;
@@ -103,29 +119,78 @@ footer{
   // text-align: center;
   // background: rgba(250, 250, 250, 0.8);
 }
+.subtitle{
+  font-size: 1.4em;
+  letter-spacing: 0.15em;
+  font-weight: lighter;
+  // text-align: justify;
+  margin-right: 10%;
+  font-family: "Archivo", sans-serif;
+}
+p{
+  font-family: "Archivo", sans-serif;
+  font-weight: lighter;
 
+}
 h1{
   // padding: 50px;
-  font-size: 4.8em;
+  font-size: 5.8em;
   font-family: "Argentina";
   justify-content:flex-end;
   margin-right: 10%;
 
 }
 h2{
-  font-size: 1.8em;
-  justify-content:flex-end;
+  font-size: 1.4em;
+  letter-spacing: 0.15em;
+  font-weight: lighter;
+  // justify-content:flex-end;
+  text-align: justify;
   margin-right: 10%;
-
-
+  font-family: "Archivo", sans-serif;
 }
 h3{
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-family: "Archivo", sans-serif;
   display: inline;
   padding: 0 25px;
   // margin: 20px;
 }
+h4{
+  font-size: 1.5em;
+  width: 50px;
+  height: 50px;
+
+  font-family: "Argentina";
+  background-color: #D7BAB8;
+  border-radius: 50%;
+  color: white;
+  padding: 15px;
+}
+#pro1{
+  background-color: #E6F0F2;
+}
+#pro2{
+  background-color: #F3F8FF;
+}
+#pro3{
+  background-color: #DFD6D7;
+}
+#pro4{
+  background-color: #E6F0F2;
+}
+#pro5{
+  background-color:#D7BAB8;
+}
+#pro6{
+  background-color: #DFD6D7;
+}
 .text-align-center{
   text-align: center;
+}
+.text-align-left{
+  text-align: left;
 }
 .main{
   margin-top: 10vh;
@@ -135,6 +200,9 @@ h3{
 }
 .padding5vhb{
   padding-bottom: 5vh;
+}
+.padding5{
+  padding: 5px;
 }
 .padding15{
   padding: 15px;
@@ -151,6 +219,9 @@ h3{
 .flex{
   display: flex;
 }
+.flex-grow{
+  flex-grow: 1;
+}
 .just-cont-around{
   justify-content: space-around;
 }
@@ -160,11 +231,35 @@ h3{
 .just-cont-center{
   justify-content: center;
 }
+.just-cont-f-e{
+  justify-content: flex-end;
+}
 .align-i-cent{
   align-items: center;
 }
+.width10{
+  width: 15%;
+}
+.width20{
+  width: 20%;
+}
+.width30{
+  width: 30%;
+}
+.width40{
+  width: 40%;
+}
+.width50{
+  width: 50%;
+}
+.width60{
+  width: 60%;
+}
 .width75{
   width: 75%;
+}
+.width80{
+  width: 80%;
 }
 .width100{
   width: 100%;

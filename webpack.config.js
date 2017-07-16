@@ -100,7 +100,7 @@ module.exports = {
             include: PATHS.images,
             loader: "file-loader?name=public/images/[name].[ext]"},
             {
-            test: /\.(eot|svg|ttf|woff|woff2)$/,
+            test: /\.(eot|svg|ttf|woff|otf|woff2)$/,
             include : PATHS.fonts,
             loader: `file-loader?name=public/fonts/[name].[ext]`
             // loader: `file-loader?name=fonts/[name].[ext]`
