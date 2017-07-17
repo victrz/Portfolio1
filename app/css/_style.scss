@@ -117,7 +117,7 @@ footer{
   letter-spacing: 10px;
 }
 #mobile-title{
-  position: absolute;
+   position: absolute;
   bottom: 50%;
   color: #000;
   text-shadow: #c9c9c9 1px 0 3px;
@@ -141,7 +141,6 @@ footer{
   letter-spacing: 0.15em;
   font-weight: lighter;
   // text-align: justify;
-  margin-right: 10%;
   font-family: "Archivo", sans-serif;
 }
 p{
@@ -155,8 +154,6 @@ h1{
   // font-family: "Loveline";
   font-family: "Argentina";
   justify-content:flex-end;
-  margin-right: 10%;
-
 }
 h2{
   font-size: 1.4em;
@@ -572,6 +569,12 @@ h5{
 
 }
 @media only screen and (min-device-width: 900px) {
+  .subtitle{
+    margin-right: 10%;
+  }
+  h1{
+    margin-right: 10%;
+  }
   #social{
     justify-content: space-between;
     width: 50%;
