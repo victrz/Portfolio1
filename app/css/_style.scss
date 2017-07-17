@@ -10,6 +10,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Loveline';
+  src: url('./fonts/Loveline.ttf') format('ttf');
+  // font-weight: normal;
+  // font-style: normal;
+}
 
 html{
   width: 100%;
@@ -23,6 +29,7 @@ body{
 footer{
   height: 18vh;
   background: #282E34;
+  padding-top: 30px;
 }
 #copyright{
   color: white;
@@ -44,9 +51,12 @@ footer{
   justify-content: space-around;
   align-items: center;
 
-    a:link,  a:visited, a:hover, a:active,{
+    a:link,  a:visited, a:active,{
       text-decoration: none;
       color: black;
+    }
+    a:hover{
+      color: #D7BAB8;
     }
 
 
@@ -73,7 +83,7 @@ footer{
   background-size: cover;
 }
 #section2{
-  min-height: 450px;
+  min-height: 300px;
   position: relative;
   background: url('./images/desk4.jpg');
   background-attachment: fixed;
@@ -83,7 +93,7 @@ footer{
 }
 
 #section3{
-  min-height: 450px;
+  min-height: 300px;
   position: relative;
   background: url('./images/desk2.jpg');
   background-attachment: fixed;
@@ -106,12 +116,19 @@ footer{
   font-size: 25px;
   letter-spacing: 10px;
 }
+#mobile-title{
+  position: absolute;
+  bottom: 50%;
+  color: #000;
+  text-shadow: #c9c9c9 1px 0 3px;
+
+}
 
 .title{
   position: absolute;
   // left: 0;
   bottom: 25%;
-  // width: 100%;
+  width: 400px;
   // text-align: center;
   color: #000;
   // width: 60%;
@@ -135,7 +152,8 @@ p{
 h1{
   // padding: 50px;
   font-size: 5.8em;
-  font-family: "Argentina";
+  font-family: "Loveline";
+  // font-family: "Argentina";
   justify-content:flex-end;
   margin-right: 10%;
 
@@ -154,10 +172,10 @@ h3{
   text-transform: uppercase;
   font-family: "Archivo", sans-serif;
   display: inline;
-  padding: 0 25px;
+  padding: 0 7px;
   // margin: 20px;
 }
-h4{
+.h4{
   font-size: 1.5em;
   width: 50px;
   height: 50px;
@@ -168,24 +186,26 @@ h4{
   color: white;
   padding: 15px;
 }
-#pro1{
-  background-color: #E6F0F2;
+h4{
+  font-size: 1.5em;
+  font-family: "Archivo", sans-serif;
+  font-weight: lighter;
+  color: black;
+  cursor: pointer;
 }
-#pro2{
-  background-color: #F3F8FF;
+h4:hover{
+  color: #D7BAB8;
 }
-#pro3{
-  background-color: #DFD6D7;
+h5{
+  font-family: "Archivo", sans-serif;
+  font-size: 2em;
+  color: #282E34;
+  text-shadow: #CCC 1px 0 10px;
+  font-weight: lighter;
+  padding-bottom: 20px;
+  text-align: center;
 }
-#pro4{
-  background-color: #E6F0F2;
-}
-#pro5{
-  background-color:#D7BAB8;
-}
-#pro6{
-  background-color: #DFD6D7;
-}
+
 .text-align-center{
   text-align: center;
 }
@@ -266,7 +286,7 @@ h4{
 }
 .subsection{
   background-color: white;
-  padding: 40px;
+  padding: 5px;
 }
 .h-50vh{
   height: 50vh;
@@ -280,9 +300,312 @@ h4{
 .h-100vh{
   height: 100vh;
 }
+
+
+/* The ribbons */
+.box {
+  width: 300px; height: 400px;
+  position: relative;
+  border: 1px solid #BBB;
+  background: transparent;
+}
+.ribbon {
+  position: absolute;
+  left: -5px; top: -5px;
+  z-index: 1;
+  overflow: hidden;
+  width: 75px; height: 75px;
+  text-align: right;
+}
+.ribbon span {
+  font-size: 1em;
+  font-weight: bold;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 40px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  width: 200px;
+  display: block;
+  background: #282E34;
+  background: linear-gradient(#282E34 0%, #24292E 100%);
+
+  // background: linear-gradient(#D7BAB8 0%, #E3CECD 100%);
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 37px; left: -43px;
+}
+.ribbon span::before {
+  content: "";
+  position: absolute; left: 0px; top: 100%;
+  z-index: -1;
+  border-left: 3px solid #282E34;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #282E34;
+}
+.ribbon span::after {
+  content: "";
+  position: absolute; right: 0px; top: 100%;
+  z-index: -1;
+  border-left: 3px solid transparent;
+  border-right: 3px solid #282E34;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #282E34;
+}
+
+// CYCLE //
+
+.cycle-slideshow {
+  box-shadow: 1px 0px rgba(0,0,0,0), -1px 5px rgba(0,0,0,0.07), 0 0 1px 2px rgba(0,0,0,0.05);
+
+  border-radius: 50px;
+  margin: auto;
+    width: 60%;
+    height: 400px;
+    display: block;
+    text-align: center;
+    z-index: 0;
+    overflow: hidden;
+    // margin: 0;
+}
+.cycle-slideshow div {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.cycle-next {
+    right: 0;
+    background: url('./images/right.png') 50% 50% no-repeat;
+}
+.cycle-prev {
+    left: 0;
+    background: url('./images/prev.png') 50% 50% no-repeat;
+}
+.cycle-prev, .cycle-next {
+    position: absolute;
+    top: 0;
+    width: 8%;
+    opacity: .70;
+    filter: alpha(opacity=80);
+    z-index: 800;
+    height: 100%;
+    cursor: pointer;
+}
+.slide-image {
+    position: relative;
+    background-position: center;
+    background-size: cover !important;
+    background-attachment: scroll;
+    height: 100%;
+    width: 100%;
+    filter: alpha(opacity=80);
+}
+#examples{
+  width: 100%;
+}
+#projectSection{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+// EXAMPLE IMAGES //
+.ex1a{
+  background-image: linear-gradient(rgba(250, 250, 250, 0.2), rgba(250, 250, 250, 0.3)),url('./images/ex1a.png');
+  background-size: cover;
+  background-position: center;
+}
+.ex1b{
+  background-image: linear-gradient(rgba(250, 250, 250, 0.2), rgba(250, 250, 250, 0.3)),url('./images/ex1b.png');
+  background-size: cover;
+  background-position: center;
+}
+.ex1c{
+  background-image: linear-gradient(rgba(250, 250, 250, 0.2), rgba(250, 250, 250, 0.3)),url('./images/ex1c.png');
+  background-size: cover;
+  background-position: center;
+}
+.ex2a{
+  background-image: linear-gradient(rgba(250, 250, 250, 0.2), rgba(250, 250, 250, 0.3)),url('./images/ex2a.png');
+  background-size: cover;
+  background-position: center;
+}
+.ex2b{
+  background-image: linear-gradient(rgba(250, 250, 250, 0.2), rgba(250, 250, 250, 0.3)),url('./images/ex2b.png');
+  background-size: cover;
+  background-position: center;
+}
+.ex2c{
+  background-image: linear-gradient(rgba(250, 250, 250, 0.2), rgba(250, 250, 250, 0.3)),url('./images/ex2c.png');
+  background-size: cover;
+  background-position: center;
+}
+.ex2d{
+  background-image: linear-gradient(rgba(250, 250, 250, 0.2), rgba(250, 250, 250, 0.2)),url('./images/ex2d.png');
+  background-size: cover;
+  background-position: center;
+}
+.ex3a{
+  background-image: linear-gradient(rgba(250, 250, 250, 0.2), rgba(250, 250, 250, 0.3)),url('./images/ex3a.png');
+  background-size: cover;
+  background-position: center;
+}
+.ex3b{
+  background-image: linear-gradient(rgba(250, 250, 250, 0.2), rgba(250, 250, 250, 0.3)),url('./images/ex3b.png');
+  background-size: cover;
+  background-position: center;
+}
+.ex3c{
+  background-image: linear-gradient(rgba(250, 250, 250, 0.2), rgba(250, 250, 250, 0.3)),url('./images/ex3c.png');
+  background-size: cover;
+  background-position: center;
+}
+.ex3d{
+  background-image: linear-gradient(rgba(250, 250, 250, 0.2), rgba(250, 250, 250, 0.3)),url('./images/ex3d.png');
+  background-size: cover;
+  background-position: center;
+}
+.ex4a{
+  background-image: linear-gradient(rgba(250, 250, 250, 0.2), rgba(250, 250, 250, 0.3)),url('./images/ex4a.png');
+  background-size: cover;
+  background-position: center;
+}
+.ex4b{
+  background-image: linear-gradient(rgba(250, 250, 250, 0.2), rgba(250, 250, 250, 0.3)),url('./images/ex4b.png');
+  background-size: cover;
+  background-position: center;
+}
+.ex4c{
+  background-image: linear-gradient(rgba(250, 250, 250, 0.2), rgba(250, 250, 250, 0.3)),url('./images/ex4c.png');
+  background-size: cover;
+  background-position: center;
+}
+.ex4d{
+  background-image: linear-gradient(rgba(250, 250, 250, 0.2), rgba(250, 250, 250, 0.3)),url('./images/ex4d.png');
+  background-size: cover;
+  background-position: center;
+}
+.ex5a{
+  background-image: linear-gradient(rgba(250, 250, 250, 0.2), rgba(250, 250, 250, 0.3)),url('./images/ex5a.png');
+  background-size: cover;
+  background-position: center;
+}
+.ex5b{
+  background-image: linear-gradient(rgba(250, 250, 250, 0.2), rgba(250, 250, 250, 0.3)),url('./images/ex5b.png');
+  background-size: cover;
+  background-position: center;
+}
+.ex5c{
+  background-image: linear-gradient(rgba(250, 250, 250, 0.2), rgba(250, 250, 250, 0.3)),url('./images/ex5c.png');
+  background-size: cover;
+  background-position: center;
+}
+.ex5d{
+  background-image: linear-gradient(rgba(250, 250, 250, 0.2), rgba(250, 250, 250, 0.3)),url('./images/ex5d.png');
+  background-size: cover;
+  background-position: center;
+}
+.ex6a{
+  background-image: linear-gradient(rgba(250, 250, 250, 0.2), rgba(250, 250, 250, 0.3)),url('./images/ex6a.png');
+  background-size: cover;
+  background-position: center;
+}
+.ex6b{
+  background-image: linear-gradient(rgba(250, 250, 250, 0.2), rgba(250, 250, 250, 0.3)),url('./images/ex6b.png');
+  background-size: cover;
+  background-position: center;
+}
+.ex6c{
+  background-image: linear-gradient(rgba(250, 250, 250, 0.2), rgba(250, 250, 250, 0.3)),url('./images/ex6c.png');
+  background-size: cover;
+  background-position: center;
+}
+.ex6d{
+  background-image: linear-gradient(rgba(250, 250, 250, 0.2), rgba(250, 250, 250, 0.3)),url('./images/ex6d.png');
+  background-size: cover;
+  background-position: center;
+}
+#descriptions{
+  width: 100%;
+}
+.desc{
+  padding: 20px 0;
+}
+#desc2{
+  display: none;
+}
+#desc3{
+  display: none;
+}
+#desc4{
+  display: none;
+}
+#desc5{
+  display: none;
+}
+#desc6{
+  display: none;
+}
+
 /* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
+@media only screen and (max-device-width: 900px) {
+  #section1{
+    background-position: left;
+    height: 100vh;
+  }
+  #social{
+    justify-content: space-around;
+    width: 100%;
+  }
+  #desktop-title{
+    display: none;
+  }
+  #desktop-info{
+    display: none;
+  }
+
     #section1, #section2, #section3 {
         background-attachment: scroll;
+    }
+
+}
+@media only screen and (min-device-width: 900px) {
+  #social{
+    justify-content: space-between;
+    width: 50%;
+  }
+    #examples{
+      width: 65%;
+    }
+    #social-wrap{
+      padding: 50px;
+    }
+    #mobile-title{
+      display: none;
+    }
+    #mobile-info{
+      display:none;
+    }
+    #projectSection{
+      display: flex;
+      flex-direction: row;
+      padding: 50px;
+    }
+    #descriptions{
+      width: 30%;
+    }
+    #section2{
+      min-height: 450px;
+    }
+    #section3{
+      min-height: 450px;
+    }
+    #section1, #section2, #section3 {
+        background-attachment: fixed;
+    }
+    footer{
+      padding: 50px;
     }
 }
