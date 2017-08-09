@@ -16,7 +16,9 @@ $(document).ready(function(){
         $('#desc4').fadeOut('slow', function() {
           $('#desc5').fadeOut('slow', function() {
             $('#desc6').fadeOut('slow', function() {
-              $('#desc1').fadeIn('slow', function() {});
+              $('#desc7').fadeOut('slow', function() {
+                $('#desc1').fadeIn('slow', function() {});
+              });
             });
           });
         });
@@ -29,7 +31,9 @@ $(document).ready(function(){
         $('#desc4').fadeOut('slow', function() {
           $('#desc5').fadeOut('slow', function() {
             $('#desc6').fadeOut('slow', function() {
-              $('#desc2').fadeIn('slow', function() {});
+              $('#desc7').fadeOut('slow', function() {
+                $('#desc2').fadeIn('slow', function() {});
+              });
             });
           });
         });
@@ -42,7 +46,9 @@ $(document).ready(function(){
         $('#desc4').fadeOut('slow', function() {
           $('#desc5').fadeOut('slow', function() {
             $('#desc6').fadeOut('slow', function() {
-              $('#desc3').fadeIn('slow', function() {});
+              $('#desc7').fadeOut('slow', function() {
+                $('#desc3').fadeIn('slow', function() {});
+              });
             });
           });
         });
@@ -55,7 +61,9 @@ $(document).ready(function(){
         $('#desc3').fadeOut('slow', function() {
           $('#desc5').fadeOut('slow', function() {
             $('#desc6').fadeOut('slow', function() {
-              $('#desc4').fadeIn('slow', function() {});
+              $('#desc7').fadeOut('slow', function() {
+                $('#desc4').fadeIn('slow', function() {});
+              });
             });
           });
         });
@@ -68,7 +76,9 @@ $(document).ready(function(){
         $('#desc3').fadeOut('slow', function() {
           $('#desc4').fadeOut('slow', function() {
             $('#desc6').fadeOut('slow', function() {
-              $('#desc5').fadeIn('slow', function() {});
+              $('#desc7').fadeOut('slow', function() {
+                $('#desc5').fadeIn('slow', function() {});
+              });
             });
           });
         });
@@ -81,7 +91,24 @@ $(document).ready(function(){
         $('#desc3').fadeOut('slow', function() {
           $('#desc4').fadeOut('slow', function() {
             $('#desc5').fadeOut('slow', function() {
-              $('#desc6').fadeIn('slow', function() {});
+              $('#desc7').fadeOut('slow', function() {
+                $('#desc6').fadeIn('slow', function() {});
+              });
+            });
+          });
+        });
+      });
+    });
+  });
+  $('#desc7click').click(function() {
+    $('#desc1').fadeOut('slow', function() {
+      $('#desc2').fadeOut('slow', function() {
+        $('#desc3').fadeOut('slow', function() {
+          $('#desc4').fadeOut('slow', function() {
+            $('#desc5').fadeOut('slow', function() {
+              $('#desc6').fadeOut('slow', function() {
+                $('#desc7').fadeIn('slow', function() {});
+              });
             });
           });
         });
