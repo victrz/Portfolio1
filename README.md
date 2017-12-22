@@ -1,4 +1,3 @@
 # Portfolio1
-My currently active portfolio site
+A version of my portfolio site (victoriatrzcianowski.com) - Pink & Coffee & Parallax Scroll
 
-victoriatrzcianowski.com
